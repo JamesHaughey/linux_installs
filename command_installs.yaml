@@ -1,0 +1,12 @@
+- name: oh-my-zsh
+  command: sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+- name: powerlevel10k
+  command: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+- name: zsh-autosuggestions
+  command: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+- name: zsh-syntax-highlighting
+  command: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+- name: .zshrc
+  command: curl https://raw.githubusercontent.com/JamesHaughey/dotfiles/master/linux/zsh/.zshrc > ~/.zshrc
+- name: .p10k.zsh
+  command: curl https://raw.githubusercontent.com/JamesHaughey/dotfiles/master/linux/zsh/.p10k.zsh > ~/.p10k.zsh

@@ -1,0 +1,12 @@
+Add Apt Repository:
+  - ppa:system76/pop
+
+Apt Installs:
+  - solaar
+  - tilix
+  - pop-theme
+  - gnome-tweaks
+
+Command Installs:
+  - name: install fonts
+    command: bash scripts/install_fonts.sh 

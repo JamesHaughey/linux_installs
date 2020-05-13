@@ -1,0 +1,23 @@
+Apt Prerequisites:
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - gnupg-agent
+  - software-properties-common
+
+Apt Key Commands:
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  - sudo apt-key fingerprint 0EBFCD88
+
+Apt Repositories:
+  # Replace eoan with $(lsb_release -cs) when latest version of Ubuntu ready
+  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu eoan stable"
+
+Apt Docker Installs:
+  - docker-ce 
+  - docker-ce-cli 
+  - containerd.io
+  - docker-compose
+
+Add User To Docker Group:
+  - sudo usermod -aG docker $USER
