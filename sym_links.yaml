@@ -1,3 +1,4 @@
 - source: /usr/bin/python3
   destination: /usr/bin/python
-- 
+- source: /usr/bin/pip3
+  destination: /usr/bin/pip
