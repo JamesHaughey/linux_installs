@@ -7,12 +7,15 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+# Add Python Poetry to the path
+export PATH=$HOME/.poetry/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export username=tiago
 export ZSH="/home/${username}/.oh-my-zsh"
 
 export PIPENV_VENV_IN_PROJECT=true
+export POETRY_VIRTUALENVS_IN_PROJECT=true
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
