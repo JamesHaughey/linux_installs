@@ -13,3 +13,7 @@ mkdir ${FONT_FOLDER}
 for file in "${FILE_NAMES[@]}"; do
     wget -O ${FONT_FOLDER}${file} ${URL_BASE}${file}
 done
+
+cd ~/.local/share/icons/Hey-classic-dark/64/apps/
+pwd
+cp ./fluid.svg ./org.gnome.tweaks.svg 
