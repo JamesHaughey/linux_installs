@@ -12,3 +12,7 @@ for file in "${FILE_NAMES[@]}"; do
     cd ${ICON_FOLDER}
     tar -xzf ${file}
 done
+
+cd ~/.local/share/icons/Hey-classic-dark/64/apps/
+pwd
+cp ./fluid.svg ./org.gnome.tweaks.svg 
