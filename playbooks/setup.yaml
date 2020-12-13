@@ -1,0 +1,26 @@
+- hosts: 127.0.0.1
+  connection: local
+  tasks:
+    - name: Install from url
+      become: yes
+      remote_user: root
+      apt:
+        deb: "{{ item }}"
+      loop:
+        - https://go.microsoft.com/fwlink/?LinkID=760868
+        - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      
+    - name: Install from apt
+      become: yes
+      remote_user: root
+      apt:
+        name:
+          - python3-pip
+          - python3-venv
+          - zsh
+          - git
+          - curl
+          - solaar
+          - tilix
+          - gnome-tweaks
+      
