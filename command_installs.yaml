@@ -10,3 +10,9 @@
   command: curl https://raw.githubusercontent.com/JamesHaughey/linux_installs/master/dotfiles/.zshrc > ~/.zshrc
 - name: .p10k.zsh
   command: curl https://raw.githubusercontent.com/JamesHaughey/linux_installs/master/dotfiles/.p10k.zsh > ~/.p10k.zsh
+- name: Install Fonts
+  command: sh -c "$(wget -O- https://raw.githubusercontent.com/JamesHaughey/linux_installs/master/scripts/install_fonts.sh)"
+- name: Install Icons
+  command: sh -c "$(wget -O- https://raw.githubusercontent.com/JamesHaughey/linux_installs/master/scripts/install_icons.sh)"
+- name: Install VS Code Extensions
+  command: sh -c "$(wget -O- https://raw.githubusercontent.com/JamesHaughey/linux_installs/master/scripts/install_vs_extensions.sh)"
